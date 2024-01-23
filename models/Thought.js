@@ -23,19 +23,9 @@ const thoughtSchema = new Schema(
   reactions: [reactionSchema], // Array of nested reaction documents
 });
 
-// Getter method to format the timestamp on query
-// thoughtSchema.virtual('formattedCreatedAt').get(function () {
-//   return this.createdAt.toISOString(); // Adjust the formatting as needed
-// });
-
-
-// Create a virtual property `responses` that gets the amount of response per video
-// videoSchema
-//   .virtual('getResponses')
-//   // Getter
-//   .get(function () {
-//     return this.responses.length;
-//   });
+thoughtSchema.virtual('reactionCount').get(function () {
+  return this.reactions.length;
+});
 
 // Initialize our Video model
 const Thought = model('thought', thoughtSchema);

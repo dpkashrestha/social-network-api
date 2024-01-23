@@ -23,13 +23,13 @@ const userSchema = new Schema(
     },
     thoughts: [
       {
-        type: mongoose.Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'thought', // Assuming 'thought' is the name of the referenced model
       },
     ],
     friends: [
       {
-        type: mongoose.Schema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'user', // Self-reference to User model
       },
     ],
