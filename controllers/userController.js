@@ -1,6 +1,8 @@
 const User = require('../models/User');
 
 module.exports = {
+
+  // get a user
   async getUsers(req, res) {
     try {
       const users = await User.find();
@@ -36,7 +38,7 @@ module.exports = {
     }
   },
 
-  // Update user 
+  // Update a user 
   async updateUser(req, res) {
     try {
       const user = await User.findOneAndUpdate(

@@ -1,5 +1,5 @@
   
-# social-network-api ![Static Badge](https://img.shields.io/badge/license-MIT-blue)
+# Social Network API ![Static Badge](https://img.shields.io/badge/license-MIT-blue)
 
 
 ## Description 
