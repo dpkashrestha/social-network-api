@@ -1,6 +1,7 @@
 const connection = require('../config/connection');
 const { User, Thought } = require('../models');
 const { thoughtData, userData } = require('./data');
+const { Types } = require('mongoose');
 
 connection.on('error', (err) => err);
 
@@ -27,6 +28,7 @@ connection.once('open', async () => {
   thoughtData.forEach(thought => {
     thought.createdAt = new Date();
     thought.reactions.forEach(reaction => {
+      reaction.reactionId = new Types.ObjectId();
       reaction.createdAt = new Date();
     })
   });
