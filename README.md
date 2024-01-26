@@ -25,6 +25,8 @@ npm install
 2. cmd> npm run start
 
 ## Screenshot
+<img width="1728" alt="social-network-api" src="https://github.com/dpkashrestha/social-network-api/assets/142865374/59980217-d34c-49d7-ae0b-5642bb2eb0f2">
+
 
 ## Video
 https://drive.google.com/file/d/1GI0JcgIBGgXH0uPVpj5jXPlp-cTSPTJp/view
